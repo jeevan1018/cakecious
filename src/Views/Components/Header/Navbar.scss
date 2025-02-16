@@ -9,6 +9,11 @@
         display: flex;
         justify-content: space-around;
         width: 50%;
+        .header-phone{
+          display: flex;
+          align-items: center;
+          gap: 7px;
+        }
         div{
             color: #fff;
             font-size: 16px;
@@ -19,6 +24,82 @@
 
     }
     .header-right{
+        display: flex;
+        gap: 22px;
+        align-items: center;
+        justify-content: space-around;
+        /* Removes default UL styling (bullets, padding, etc.) */
+        .h_social {
+            display: flex;               /* Horizontal icon layout */
+            list-style: none;            /* Remove default bullets */
+            margin: 0;
+            padding: 0;
+          }
+          
+          .h_social li {
+            margin-left: 22px;           /* Space between icons */
+          }
+          
+          /* Style the icon links */
+          .h_social li a {
+            color: #fff;                 /* Default icon color */
+            text-decoration: none;
+            font-size: 1.2rem;           /* Icon size */
+            transition: color 0.3s ease; /* Smooth hover transition */
+          }
+          
+          /* Hover effect */
+          .h_social li a:hover {
+            color: #0073e6;              /* Example hover color */
+          }
+          
+          /* 
+             5) CART & SEARCH ICONS LIST
+             ------------------------------------------------------------ */
+          .h_search {
+            display: flex;               /* Horizontal layout for cart & search icons */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .h_search li {
+            margin-left: 22px;
+          }
+          .cart-tt{
+            position: relative;
+          }
+          
+          /* Style the cart/search links */
+          .h_search li a {
+            color: #fff;                 /* Default icon color */
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+          }
+          
+          .h_search li a:hover {
+            color: #0073e6;              /* Example hover color */
+          }
+          
+          /* Example: style for the cart badge (the number) */
+          .tt-cart {
+               height: 18px;
+    width: 18px;
+    font-size: 11px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    color: #242424;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 18px;
+    position: absolute;
+    right: -16px;
+    top: -10px;/* Example color for the cart count */
+          }
+  
 
     }
 
