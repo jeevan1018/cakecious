@@ -178,9 +178,119 @@ span{
     }
 
 }
-.cake-wrapper{
- 
+.video_wrapper{
+    position: relative;
+    .text-ab{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+transform: translate(-50%,-50%);
+.real{
+    font-size: 70px;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+.light{
+    font-size: 25px;
+    line-height: 39px;
+    font-family: "Lora", serif;
+    font-style: italic;
+    max-width: 900px;
+    margin: 10px auto 30px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;
+    color: #fff;
+}
+    }
+}
+.service_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    margin-top: 30px;
+
+    .service{
+        font-size: 36px;
+        color: #333333;
+        font-family: "Poppins", serif;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .service-div{
+        display: flex;
     
+        gap: 30px;
+        align-items:center;
+      
+        .service-right,.service-left{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 330px;
+            .service-container{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+             
+                .heading-service{
+                    font-size: 20px;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: #242424;
+   
+                }
+                .title{
+                    font-size: 16px;
+                    font-family: "Open Sans", sans-serif;
+                    color: #555;
+                 
+                    .total{
+                        float: right;
+                        color: #e3764b;
+                        font-size: 20px;
+                        font-family: "Poppins", serif;
+                        font-weight: bold;
+                    }
+                }
+                .divider{
+                    border-bottom: 1px dashed #c8c8c8
+
+                }
+            }
+        }
+        .service-right{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+    .button{
+        background: #94c9d9;
+        color: #fff;
+        line-height: 36px;
+        display: inline-block;
+        border-width: 0;
+        padding: 0 25px;
+        font-family: "Open Sans", sans-serif;
+        position: relative;
+        overflow: hidden;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 3px;
+        margin-top: 0;
+    }
+
 }
 
 

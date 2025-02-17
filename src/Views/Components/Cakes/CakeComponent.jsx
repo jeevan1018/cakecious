@@ -68,8 +68,8 @@ const ProductSlider = () => {
               <img src={product.image} alt={product.name} />
               <span className="price-overlay">${product.price.toFixed(2)}</span>
             </div>
-            <h3>{product.name}</h3>
-            <button>Add to cart</button>
+            <h3 className="product-name">{product.name}</h3>
+            <button className="add-cart">Add to cart</button>
           </div>
         ))}
       </Slider>
