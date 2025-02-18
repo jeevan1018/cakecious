@@ -291,6 +291,148 @@ transform: translate(-50%,-50%);
         margin-top: 0;
     }
 
+ 
+
+  
+
+}
+
+.review-container{
+    margin-top: 60px;
+    background: #62c3e7;
+    width: 100%;
+padding: 46px;
+
+/* Make sure the review-card is a flex container */
+.review-card {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    padding: 20px;       /* Optional: add some padding */
+  }
+  
+  /* Style the image container */
+  .img-card {
+    flex: 0 0 auto;      /* Do not allow it to grow or shrink */
+    position: relative;
+    width: 150px;        /* Set a fixed width for the image card */
+    margin-right: 20px;  /* Space to the right of the image */
+  }
+  
+  /* Style the image inside the image container */
+  .img-card .img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;  /* Optional: rounded corners */
+    display: block;
+  }
+  
+  /* Optional: Style the comma overlay (if needed) */
+  .comma {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Divider: a vertical line */
+  .divider {
+    width: 2px;             /* Thickness of the divider */
+    background-color: #ccc; /* Color of the divider */
+    height: 120px;          /* Adjust height as needed */
+    margin: 0 20px;         /* Horizontal spacing around the divider */
+  }
+  
+  /* Review content: takes the remaining space */
+  .review-content {
+    flex: 1;
+    padding: 0 10px;        /* Optional padding for text */
+  }
+  
+  /* Optional: styling the review text */
+  .review-content .review {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  /* Optional: styling the name */
+  .review-content .name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  
+
+
+}
+.blog-container{
+        display:flex;
+        gap:15px;
+        flex-direction: column;
+        padding: 90px;
+        .blog-heading{
+            color: #333333;
+            font-family: "Poppins", serif;
+            font-weight: bold;
+            font-size: 38px;
+            position: relative;
+            display: inline-block;
+
+        }
+        .blog-des{
+            font-size: 20px;
+            font-family: "Lora", serif;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 0px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+        .img-container{
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            .container-1{
+                position: relative;
+                width: 210px;
+                .container1-text{
+                    position:absolute;
+              
+                  top: 30%;
+                  font-size: 22px;
+                  color: #fff;
+                  font-family: "Poppins", serif;
+                  font-weight: bold;
+                  margin-bottom: 0px;
+                  line-height: 1.2;
+
+                }
+            }
+            .container-2{
+                width: 210px;
+                .date{
+                    font-size: 13px;
+                    color: #242424;
+                    font-family: "Open Sans", sans-serif;
+                    margin-top: 25px;
+                    margin-bottom: 10px;
+                }
+                .river{
+                    font-size: 22px;
+                    font-family: "Poppins", serif;
+                    font-weight: bold;
+                    color: #242424;
+                    margin-bottom: 15px;
+                }
+                .pity{
+                    line-height: 26px;
+                    font-size: 16px;
+                    font-family: "Poppins", sans-serif;
+                    color: #555;
+                }
+            }
+        }
 }
 
 
