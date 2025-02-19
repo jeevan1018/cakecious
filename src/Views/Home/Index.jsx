@@ -10,6 +10,7 @@ import Video from '../Components/Body/Video'
 import Service from '../Components/Body/Service'
 import ReviewComponent from '../Components/Body/Reviews'
 import Blog from '../Components/Body/Blog'
+import Footer from '../Components/Body/Footer'
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <ReviewComponent/>
       </div>
       <Blog/>
+      <Footer/>
     </div>
   )
 }

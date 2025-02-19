@@ -62,14 +62,18 @@ const ReviewComponent = () => {
       <Slider ref={sliderRef} {...settings}>
         {products.map((product) => (
           <div className="review-card" key={product.id}>
-            <div className="img-card">
-              <img className="img" src={product.img} alt={product.name} />
-              <div className="comma">"</div>
-            </div>
-            <div className="divider" />
-            <div className="review-content">
-              <div className="review">{product.review}</div>
-              <div className="name">{product.name}</div>
+            
+         
+            <img className="img-review" src={product.img} alt={product.name} />
+
+            <span className="review">{product.review}</span>
+
+<div>
+              {/* <span className="comma">"</span> */}
+            
+           
+           
+              <span className="name">{product.name}</span>
             </div>
           </div>
         ))}
