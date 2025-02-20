@@ -46,7 +46,10 @@ const Footer = () => {
 <div className='copy-write' >
     <div className='copy-text'>
     Cakecious Demo 4 © 2024 All Rights Reserved.	                </div>
-    <div className='owner'>Developed By <span className='owner-name'>Jeevan Palapati</span></div>
+    <div className='owner'>Developed By - <span className='owner-name'>Jeevan Palapati</span>
+    <div className='owner'>@MasterKnown</div>
+
+    </div>
     
 </div>
 

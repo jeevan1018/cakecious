@@ -1,7 +1,7 @@
 .header{
     background-color: #f195b2;
     height: 50px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -28,36 +28,32 @@
         gap: 22px;
         align-items: center;
         justify-content: space-around;
-        /* Removes default UL styling (bullets, padding, etc.) */
         .h_social {
-            display: flex;               /* Horizontal icon layout */
-            list-style: none;            /* Remove default bullets */
+            display: flex;              
+            list-style: none;           
             margin: 0;
             padding: 0;
           }
           
           .h_social li {
-            margin-left: 22px;           /* Space between icons */
+            margin-left: 22px;         
           }
           
-          /* Style the icon links */
+
           .h_social li a {
-            color: #fff;                 /* Default icon color */
+            color: #fff;               
             text-decoration: none;
-            font-size: 1.2rem;           /* Icon size */
-            transition: color 0.3s ease; /* Smooth hover transition */
+            font-size: 1.2rem;         
+            transition: color 0.3s ease; 
           }
           
-          /* Hover effect */
+         
           .h_social li a:hover {
-            color: #0073e6;              /* Example hover color */
+            color: #0073e6;             
           }
           
-          /* 
-             5) CART & SEARCH ICONS LIST
-             ------------------------------------------------------------ */
           .h_search {
-            display: flex;               /* Horizontal layout for cart & search icons */
+            display: flex;              
             list-style: none;
             margin: 0;
             padding: 0;
@@ -70,19 +66,17 @@
             position: relative;
           }
           
-          /* Style the cart/search links */
           .h_search li a {
-            color: #fff;                 /* Default icon color */
+            color: #fff;                
             text-decoration: none;
             font-size: 1.2rem;
             transition: color 0.3s ease;
           }
           
           .h_search li a:hover {
-            color: #0073e6;              /* Example hover color */
+            color: #0073e6;             
           }
           
-          /* Example: style for the cart badge (the number) */
           .tt-cart {
                height: 18px;
     width: 18px;
@@ -97,10 +91,31 @@
     line-height: 18px;
     position: absolute;
     right: -16px;
-    top: -10px;/* Example color for the cart count */
+    top: -10px;
           }
   
 
     }
 
+}
+
+@media screen and (max-width:400px) {
+  .header{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    .header-right , .header-left{
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      .header-phone{
+        justify-content: center;
+      }
+    }
+    .header-right > *:nth-child(2) {
+      display: none;
+  }
+  }
+  
 }
